@@ -1,1 +1,2 @@
-web: npm run init && npm run build && npm run prod-server
+worker: cd client && npm install
+web: npm run production-build && npm run prod-server
