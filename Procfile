@@ -1,2 +1,2 @@
-worker: cd client && npm install
-web: npm run production-build && npm run prod-server
+worker: cd client && npm install && npm run build
+web: npm run prod-server
