@@ -2,6 +2,9 @@
   "name": "fcd",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "init": "echo Устновка зависимостей сервера... && npm i && cd client && echo Установка зависимостей клиента... && npm i",
     "prod-server": "node server/server-core.js",
