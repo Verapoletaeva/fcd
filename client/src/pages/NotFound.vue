@@ -1,6 +1,6 @@
 <template>
   <div class="not-found">
-    <img class="not-found--logo" src="404.png" width="647" alt="404">
+    <img class="not-found--logo" src="404.png" width="470" alt="404">
     <p class="not-found--text">Это был несчастный случай...</p>
     <p class="not-found--text">К сожалению, здесь не нашлось страницы, которую Вы искали.<br>
     Возможно, о ужас, она пропала! А может, ее не было???</p>
@@ -8,7 +8,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  title: 'Ой, ошибка 404'
+};
 </script>
 
 <style>
@@ -22,28 +24,29 @@ export default {};
     font-weight: normal;
     font-family: "Arial";
     font-style: normal;
+    font-size: 18px;
     color: #ffffff;
   }
 
   .not-found {
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     max-width: 750px;
     justify-content: center;
     align-items: center;
-    padding: auto auto;
+    align-content: center;
     margin: 0 auto;
   }
 
   .not-found--logo {
-    margin: 80px 20px 60px 20px;
+    margin: 0 40px 60px 40px;
     min-width: 300px;
   }
 
   .not-found--text {
-    font-size: 24px;
     text-align: center;
-    margin: 0 20px 20px 20px;
+    margin: 0 40px 20px 40px;
     min-width: 300px;
   }
 </style>
