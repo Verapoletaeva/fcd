@@ -1,2 +1,1 @@
-worker: cd client && npm install && npm run build
-web: npm run prod-server
+web: npm run build && npm run prod-server
