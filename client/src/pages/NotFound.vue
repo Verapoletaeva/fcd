@@ -1,6 +1,6 @@
 <template>
   <div class="not-found">
-    <img class="not-found--logo" src="404.png" width="470" alt="404">
+    <img class="not-found--logo" src="../../public/404.png" width="470" alt="404">
     <p class="not-found--text">Это был несчастный случай...</p>
     <p class="not-found--text">К сожалению, здесь не нашлось страницы, которую Вы искали.<br>
     Возможно, о ужас, она пропала! А может, ее не было???</p>
