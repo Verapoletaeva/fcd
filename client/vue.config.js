@@ -7,7 +7,7 @@ module.exports = {
   chainWebpack: (config) => {
     config.plugin('define').tap((definitions) => {
       definitions[0] = Object.assign(definitions[0], {
-        OUTER_PORT: 80
+        SERVER_PORT: 80
       });
       return definitions;
     });
