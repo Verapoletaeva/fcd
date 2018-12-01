@@ -18,9 +18,10 @@ const protocol = window.location.protocol;
 const hostname = window.location.hostname;
 
 export default async function query(methodName, ...args) {
-  // Подставляем номер порта (OUTER_PORT) из конфигурационного файла,
+  // Подставляем номер порта (SERVER_PORT) из конфигурационного файла,
   // чтобы в режиме разработки ходить за бизнес логикой на него
-  const port = hostname == 'localhost' ? '' : OUTER_PORT;
+  // В режиме развертывания порт указывать не нужно
+  const port = hostname == 'localhost' ? `:${SERVER_PORT}` : '';
   const address = `${protocol}//${hostname}${port}/api/${methodName}?${JSON.stringify(args)}`;
   const response = await fetch(address);
   const json = await response.json();
