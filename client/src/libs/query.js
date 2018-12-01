@@ -18,9 +18,9 @@ const protocol = window.location.protocol;
 const hostname = window.location.hostname;
 
 export default async function query(methodName, ...args) {
-  // Подставляем номер порта (PORT) из конфигурационного файла сервера,
+  // Подставляем номер порта (OUTER_PORT) из конфигурационного файла,
   // чтобы в режиме разработки ходить за бизнес логикой на него
-  const address = `${protocol}//${hostname}:${PORT}/api/${methodName}?${JSON.stringify(args)}`;
+  const address = `${protocol}//${hostname}:${OUTER_PORT}/api/${methodName}?${JSON.stringify(args)}`;
   const response = await fetch(address);
   const json = await response.json();
   if (json.error) {
