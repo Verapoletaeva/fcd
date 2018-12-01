@@ -41,4 +41,10 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1FA19C, #000000);
+  background-attachment: fixed;
+}
 </style>
