@@ -14,17 +14,19 @@
     "lint": "echo Проверка сервера... && npx eslint . && echo No lint errors found! && echo. && npm run test && echo Проверка клиента... && cd client && npm run lint"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "vue": "^2.5.17",
     "@vue/cli-plugin-babel": "^3.1.1",
-    "@vue/cli-service": "^3.1.1",
-    "vue-template-compiler": "^2.5.17",
     "@vue/cli-plugin-eslint": "^3.1.5",
+    "@vue/cli-service": "^3.1.1",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "cors": "^2.8.5",
     "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0"
+    "eslint-plugin-vue": "^5.0.0-0",
+    "express": "^4.16.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
